@@ -20,8 +20,8 @@
 @import AppAuth;
 @import GTMAppAuth;
 #else
-#import <AppAuth/AppAuth.h>
-#import <GTMAppAuth/GTMAppAuth.h>
+#import <AppAuthCore/AppAuthCore.h>
+#import "GTMAppAuth.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

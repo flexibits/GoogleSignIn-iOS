@@ -38,22 +38,22 @@
 @import GTMAppAuth;
 @import GTMSessionFetcherCore;
 #else
-#import <AppAuth/OIDAuthState.h>
-#import <AppAuth/OIDAuthorizationRequest.h>
-#import <AppAuth/OIDAuthorizationResponse.h>
-#import <AppAuth/OIDAuthorizationService.h>
-#import <AppAuth/OIDError.h>
-#import <AppAuth/OIDExternalUserAgentSession.h>
-#import <AppAuth/OIDIDToken.h>
-#import <AppAuth/OIDResponseTypes.h>
-#import <AppAuth/OIDServiceConfiguration.h>
-#import <AppAuth/OIDTokenRequest.h>
-#import <AppAuth/OIDTokenResponse.h>
-#import <AppAuth/OIDURLQueryComponent.h>
-#import <AppAuth/OIDAuthorizationService+IOS.h>
-#import <GTMAppAuth/GTMAppAuthFetcherAuthorization+Keychain.h>
-#import <GTMAppAuth/GTMAppAuthFetcherAuthorization.h>
-#import <GTMSessionFetcher/GTMSessionFetcher.h>
+#import <AppAuthCore/OIDAuthState.h>
+#import <AppAuthCore/OIDAuthorizationRequest.h>
+#import <AppAuthCore/OIDAuthorizationResponse.h>
+#import <AppAuthCore/OIDAuthorizationService.h>
+#import <AppAuthCore/OIDError.h>
+#import <AppAuthCore/OIDExternalUserAgentSession.h>
+#import <AppAuthCore/OIDIDToken.h>
+#import <AppAuthCore/OIDResponseTypes.h>
+#import <AppAuthCore/OIDServiceConfiguration.h>
+#import <AppAuthCore/OIDTokenRequest.h>
+#import <AppAuthCore/OIDTokenResponse.h>
+#import <AppAuthCore/OIDURLQueryComponent.h>
+#import "OIDAuthorizationService+IOS.h"
+#import "GTMAppAuthFetcherAuthorization+Keychain.h"
+#import "GTMAppAuthFetcherAuthorization.h"
+#import "GTMSessionFetcher.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

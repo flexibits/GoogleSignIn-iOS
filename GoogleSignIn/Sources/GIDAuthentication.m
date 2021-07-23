@@ -25,15 +25,15 @@
 @import AppAuth;
 @import GTMAppAuth;
 #else
-#import <AppAuth/OIDAuthState.h>
-#import <AppAuth/OIDAuthorizationRequest.h>
-#import <AppAuth/OIDAuthorizationResponse.h>
-#import <AppAuth/OIDAuthorizationService.h>
-#import <AppAuth/OIDError.h>
-#import <AppAuth/OIDIDToken.h>
-#import <AppAuth/OIDTokenRequest.h>
-#import <AppAuth/OIDTokenResponse.h>
-#import <GTMAppAuth/GTMAppAuthFetcherAuthorization.h>
+#import <AppAuthCore/OIDAuthState.h>
+#import <AppAuthCore/OIDAuthorizationRequest.h>
+#import <AppAuthCore/OIDAuthorizationResponse.h>
+#import <AppAuthCore/OIDAuthorizationService.h>
+#import <AppAuthCore/OIDError.h>
+#import <AppAuthCore/OIDIDToken.h>
+#import <AppAuthCore/OIDTokenRequest.h>
+#import <AppAuthCore/OIDTokenResponse.h>
+#import "GTMAppAuthFetcherAuthorization.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
