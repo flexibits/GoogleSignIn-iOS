@@ -88,6 +88,7 @@ typedef enum {
     completion();
     return NO;
   }
+#if !TARGET_OS_VISION
   // All UI must happen in the main thread.
   dispatch_async(dispatch_get_main_queue(), ^() {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
@@ -127,6 +128,7 @@ typedef enum {
       finish();
     }
   });
+#endif
   return YES;
 }
 
@@ -173,8 +175,7 @@ typedef enum {
                                               style:UIAlertActionStyleDefault
                                             handler:^(UIAlertAction *action) {
       completion();
-      [[UIApplication sharedApplication]
-          openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:NULL];
     }]];
   } else {
     [alert addAction:[UIAlertAction actionWithTitle:[self okayString]
@@ -204,7 +205,7 @@ typedef enum {
                                               style:UIAlertActionStyleDefault
                                             handler:^(UIAlertAction *action) {
       completion();
-      [[UIApplication sharedApplication] openURL:url];
+      [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:NULL];
     }]];
   } else {
     // If the URL is not provided, simple let user acknowledge the issue. This is not supposed to
